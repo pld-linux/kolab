@@ -13,7 +13,7 @@ Source0:	%{name}-%{version}.tar.gz
 # Source0-md5:	df137e588ba7a6d23b552891391eaf81
 # will be needed? maybe everything can start using their own scritps
 #Source1:	%{name}.init
-URL:		http://kolab.kroupware.org/
+URL:		http://kolab.org/
 Requires:	apache
 Requires:	apache-mod_dav
 Requires:	apache-mod_dir
