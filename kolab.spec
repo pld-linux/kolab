@@ -12,7 +12,7 @@ License:	GPL v2
 Group:		Networking/Daemons
 Source0:	ftp://ftp.belnet.be/packages/kolab/server/release/kolab-server-%{version}/sources/%{name}d-%{_kolabd_ver}-%{_build_date}.src.rpm
 NoSource:	0
-# Source0-md5:	ff290c9e410a4ec8740d1d626c17862d
+# NoSource0-md5: ff290c9e410a4ec8740d1d626c17862d
 # will be needed? maybe everything can start using their own scritps
 #Source1:	%{name}.init
 URL:		http://www.kolab.org/
