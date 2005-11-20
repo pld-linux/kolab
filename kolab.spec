@@ -17,9 +17,9 @@ NoSource:	0
 #Source1:	%{name}.init
 URL:		http://www.kolab.org/
 BuildRequires:	%{_bindir}/rpm2cpio
-Requires:	apache
-Requires:	apache-mod_dav
-Requires:	apache-mod_dir
+Requires:	webserver = apache
+Requires:	apache(mod_dav)
+Requires:	apache(mod_dir)
 Requires:	cyrus-sasl
 Requires:	cyrus-imapd
 Requires:	openldap
