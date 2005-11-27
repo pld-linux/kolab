@@ -17,6 +17,7 @@ NoSource:	0
 #Source1:	%{name}.init
 URL:		http://www.kolab.org/
 BuildRequires:	%{_bindir}/rpm2cpio
+BuildRequires:	shtool
 Requires:	webserver = apache
 Requires:	apache(mod_dav)
 Requires:	apache(mod_dir)
