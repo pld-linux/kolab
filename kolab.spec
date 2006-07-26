@@ -18,15 +18,15 @@ NoSource:	0
 URL:		http://www.kolab.org/
 BuildRequires:	%{_bindir}/rpm2cpio
 BuildRequires:	shtool
-Requires:	webserver = apache
 Requires:	apache(mod_dav)
 Requires:	apache(mod_dir)
-Requires:	cyrus-sasl
 Requires:	cyrus-imapd
+Requires:	cyrus-sasl
 Requires:	openldap
 Requires:	perl-ldap
 Requires:	postfix
 Requires:	proftpd
+Requires:	webserver = apache
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_sysconfdir	/etc/kolab
@@ -104,8 +104,8 @@ G³ówne cechy:
 %package -n kolabd
 Summary:	Kolab2 Groupware Server Daemon
 Summary(pl):	Demon serwera pracy grupowej Kolab2
-Group:		Applications/Mail
 Version:	%{_kolabd_ver}
+Group:		Applications/Mail
 
 %description -n kolabd
 Kolab is the KDE Groupware Server that provides full groupware
