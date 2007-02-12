@@ -4,7 +4,7 @@
 %define		_build_date 20050913
 #
 Summary:	Kolab Groupware Server
-Summary(pl):	Serwer pracy grupowej Kolab
+Summary(pl.UTF-8):   Serwer pracy grupowej Kolab
 Name:		kolab
 Version:	2.0.1
 Release:	0.1
@@ -56,7 +56,7 @@ Major Features:
 - Client-side full support of S/MIME E-Mail encryption possible
   (officially Sphinx-interoperable).
 
-%description -l en
+%description -l en.UTF-8
 Kolab is a secure, scalable and reliable groupware server. It is
 formed by a number of well-known and proven components or the
 standards tasks such as E-Mail, Directory Service and Web Service.
@@ -71,39 +71,39 @@ Major Features:
 - Full seamless support of mixed clients environments
   (Outlook/KDE/Web)
 - A web administration interface
-- Supported languages: Deutsch, English, Français, Néerlandais
+- Supported languages: Deutsch, English, FranÃ§ais, NÃ©erlandais
 - A shared address book with provision for mailbox users as well as
   contacts
 - POP3 as well as IMAP4(rev1) access to mail
 - Client-side full support of S/MIME E-Mail encryption possible
   (officially Sphinx-interoperable).
 
-%description -l pl
+%description -l pl.UTF-8
 Kolab to bezpieczny, skalowalny i wiarygodny serwer pracy grupowej.
-Sk³ada siê z wielu dobrze znanych, sprawdzonych komponentów lub
-standardowych zadañ, takich jak poczta elektroniczna, us³ugi
-katalogowe i us³ugi WWW.
+SkÅ‚ada siÄ™ z wielu dobrze znanych, sprawdzonych komponentÃ³w lub
+standardowych zadaÅ„, takich jak poczta elektroniczna, usÅ‚ugi
+katalogowe i usÅ‚ugi WWW.
 
-Kolab dodaje inteligentn± interakcjê pomiêdzy komponentami, interfejs
-administracyjny przez WWW, zarz±dzanie listami wolny-zajêty itp.
+Kolab dodaje inteligentnÄ… interakcjÄ™ pomiÄ™dzy komponentami, interfejs
+administracyjny przez WWW, zarzÄ…dzanie listami wolny-zajÄ™ty itp.
 
-Z Kolabem mo¿na wspó³pracowaæ przy u¿yciu ró¿nych klientów, w tym
+Z Kolabem moÅ¼na wspÃ³Å‚pracowaÄ‡ przy uÅ¼yciu rÃ³Å¼nych klientÃ³w, w tym
 Kontacta (KDE), Outlooka (Windows) i Horde (WWW).
 
-G³ówne cechy:
-- pe³na, przezroczysta obs³uga mieszanych ¶rodowisk klienckich
+GÅ‚Ã³wne cechy:
+- peÅ‚na, przezroczysta obsÅ‚uga mieszanych Å›rodowisk klienckich
   (Outlook/KDE/WWW)
 - interfejs administracyjny przez WWW
-- obs³ugiwane jêzyki: niemiecki, angielski, francuski, holenderski
-- wspó³dzielona ksi±¿ka adresowa z zarz±dzaniem u¿ytkownikami skrzynek
+- obsÅ‚ugiwane jÄ™zyki: niemiecki, angielski, francuski, holenderski
+- wspÃ³Å‚dzielona ksiÄ…Å¼ka adresowa z zarzÄ…dzaniem uÅ¼ytkownikami skrzynek
   i kontaktami
-- dostêp do poczty przez POP3 oraz IMAP4(rev1)
-- dostêpna pe³na obs³uga szyfrowania S/MIME dla poczty elektronicznej
+- dostÄ™p do poczty przez POP3 oraz IMAP4(rev1)
+- dostÄ™pna peÅ‚na obsÅ‚uga szyfrowania S/MIME dla poczty elektronicznej
   po stronie klienta (oficjalnie zgodna ze Sphinksem).
 
 %package -n kolabd
 Summary:	Kolab2 Groupware Server Daemon
-Summary(pl):	Demon serwera pracy grupowej Kolab2
+Summary(pl.UTF-8):   Demon serwera pracy grupowej Kolab2
 Version:	%{_kolabd_ver}
 Group:		Applications/Mail
 
@@ -114,11 +114,11 @@ using third party plugins and web clients in the future. In addition
 it is a robust and flexible general IMAP mail server with LDAP
 addressbooks.
 
-%description -n kolabd -l pl
-Kolab to serwer pracy grupowej dla KDE udostêpniaj±cy pe³ne mo¿liwo¶ci
-pracy grupowej klientom KDE Kolab i Microsoft Outlook(TM) przy u¿yciu
-zewnêtrznnych wtyczek oraz w przysz³o¶ci klientów WWW. Ponadto jest to
-mocny i elastyczny serwer poczty IMAP z ksi±¿kami adresowymi LDAP.
+%description -n kolabd -l pl.UTF-8
+Kolab to serwer pracy grupowej dla KDE udostÄ™pniajÄ…cy peÅ‚ne moÅ¼liwoÅ›ci
+pracy grupowej klientom KDE Kolab i Microsoft Outlook(TM) przy uÅ¼yciu
+zewnÄ™trznnych wtyczek oraz w przyszÅ‚oÅ›ci klientÃ³w WWW. Ponadto jest to
+mocny i elastyczny serwer poczty IMAP z ksiÄ…Å¼kami adresowymi LDAP.
 
 %prep
 %setup -q -c -T
