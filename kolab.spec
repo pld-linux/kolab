@@ -4,7 +4,7 @@
 %define		_build_date 20050913
 #
 Summary:	Kolab Groupware Server
-Summary(pl.UTF-8):   Serwer pracy grupowej Kolab
+Summary(pl.UTF-8):	Serwer pracy grupowej Kolab
 Name:		kolab
 Version:	2.0.1
 Release:	0.1
@@ -103,7 +103,7 @@ Główne cechy:
 
 %package -n kolabd
 Summary:	Kolab2 Groupware Server Daemon
-Summary(pl.UTF-8):   Demon serwera pracy grupowej Kolab2
+Summary(pl.UTF-8):	Demon serwera pracy grupowej Kolab2
 Version:	%{_kolabd_ver}
 Group:		Applications/Mail
 
