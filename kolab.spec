@@ -133,7 +133,7 @@ patch -p1 -d kolabd < kolabquotawarn-issue851.patch
 rm -rf $RPM_BUILD_ROOT
 
 cd kolabd
-install -d $RPM_BUILD_ROOT{%{_sysconfdir},%{_initrddir},%{_vardir}/{log,www/{cgi-bin,freebusy,icons,locks}}}
+install -d $RPM_BUILD_ROOT{%{_sysconfdir},/etc/rc.d/init.d,%{_vardir}/{log,www/{cgi-bin,freebusy,icons,locks}}}
 %define l_shtool shtool
 %define l_prefix %{_datadir}/kolab
 %define l_value(sa) { %{?*} }
@@ -266,7 +266,7 @@ $RPM_BUILD_ROOT%{l_prefix}%{_sysconfdir}/
 exit 0
 
 
-#install %{SOURCE1} $RPM_BUILD_ROOT%{_initrddir}/kolab
+#install %{SOURCE1} $RPM_BUILD_ROOT/etc/rc.d/init.d/kolab
 
 install {smtpd.conf,virtual,transport,aliases}.template \
 	imapd.group.template \
@@ -296,11 +296,11 @@ rm -rf $RPM_BUILD_ROOT
 %post
 echo "For a fresh install please initialize Kolab and run '%{_sysconfdir}/kolab_bootstrap -b'."
 echo "If you upgraded from a previous version simply refresh Kolab and run '%{_sysconfdir}/kolab -o -v'."
-echo "In every case execute '%{_initrddir}/kolab restart'"
+echo "In every case execute '/etc/rc.d/init.d/kolab restart'"
 
 %files
 %defattr(644,root,root,755)
-#%attr(754,root,root) %{_initrddir}/kolab
+#%attr(754,root,root) /etc/rc.d/init.d/kolab
 %dir %{_sysconfdir}
 %attr(744,root,root) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/kolab_sslcert.sh
 %attr(744,root,root) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/kolab
